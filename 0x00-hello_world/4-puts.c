@@ -1,12 +1,19 @@
+/*
+ * File: 4-puts.c
+ * Author: Raphael Miyoyo
+ */
+
 #include <stdio.h>
 
 /**
- * main - Entry point
+ * main - Outputs "Programming is like building a multilingual
+ *        puzzle" and linebreak.
  *
- * Output: Sentence and 0 (Success)
+ * Return: Always 0.
  */
 int main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle");
+
 	return (0);
 }
