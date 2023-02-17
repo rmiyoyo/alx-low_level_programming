@@ -12,19 +12,17 @@
  */
 int main(void)
 {
-	int digit;
+	int n;
 
-	for (digit = 0; digit <= 9; digit++)
+	for (n = 48; n < 58; n++)
 	{
-		putchar((digit % 10) + '0');
-		if (digit == 9)
-		continue;
-		
-		putchar(',');
-		putchar(' ');
+		putchar(n);
+		if (n != 57)
+		{
+			putchar(',');
+			putchar(' ');
+		}
 	}
-
 	putchar('\n');
-
 	return (0);
 }
