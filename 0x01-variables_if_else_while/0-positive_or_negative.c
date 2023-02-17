@@ -8,8 +8,8 @@
 #include <stdio.h>
 
 /**
- * main function -  assign a random number to the variable n each time it is 
- *                  executed. 
+ * main - assign a random number to the variable
+ *        it is executed.
  *
  * Return: Always 0.
 */
