@@ -13,28 +13,31 @@
  */
 int main(void)
 {
-	int number1, number2, number3;
+	int ones = '0';
+	int tens = '0';
+	int hundreds = '0';
 
-	for (number1 = 0; number1 < 8; number1++)
+	for (hundreds = '0'; hundreds <= '9'; hundreds++)
 	{
-		for (number2 = number1 + 1; number2 < 9; number2++)
+		for (tens = '0'; tens <= '9'; tens++)
 		{
-			for (number3 = number2 + 1; number3 < 10; number3++)
+			for (ones = '0'; ones <= '9'; ones++)
 			{
-				putchar((number1 % 10) + '0');
-				putchar((number2 % 10) + '0');
-				putchar((number3 % 10) + '0');
-
-				if (number1 == 7 && number2 == 8 && number3 == 9)
-					continue;
-				
-				putchar(',');
-				putchar(' ');
+				if (!((ones == tens) || (tens == hundreds) ||
+							(tens > ones) || (hundreds > tens)))
+				{
+					putchar(hundreds);
+					putchar(tens);
+					putchar(ones);
+					if (!(ones == '9' && hundreds == '7' && tens == '8'))
+					{
+						putchar(',');
+						putchar(' ');
+					}
+				}
 			}
 		}
 	}
-
 	putchar('\n');
-
 	return (0);
 }
