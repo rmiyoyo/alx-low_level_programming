@@ -1,13 +1,28 @@
+/*
+ * File: 0-putchar.c
+ * Author: Raphael Miyoyo
+ *
+ */
+
 #include "main.h"
-#include <unistd.h>
 
 /**
- * _putchar - Outputs the character c to stdout
- * '@c': The character to print
+ * main - Prints "Main" followed by a new line.
  *
- * Return: On success 0.
+ * Return: Always 0.
  */
-int _putchar(char c)
+int main(void)
 {
-	return (write(1, &c, 1));
+	_putchar('H');
+	_putchar('o');
+	_putchar('l');
+	_putchar('b');
+	_putchar('e');
+	_putchar('r');
+	_putchar('t');
+	_putchar('o');
+	_putchar('n');
+	_putchar('\n');
+
+	return (0);
 }
